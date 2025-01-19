@@ -29,10 +29,10 @@ app.post('/api/data', (req, res) => {
   const { id, name, addr, loc } = req.body;
 
   // Validasi input dan update data
-  if (id) data.body = id;
-  if (name) data.body = name;
-  if (addr) data.body = addr;
-  if (loc) data.body = loc;
+  if (id) data.id = id;
+  if (name) data.name = name;
+  if (addr) data.addr = addr;
+  if (loc) data.loc = loc;
 
   // Broadcast ke semua klien WebSocket
   broadcast(JSON.stringify({ event: 'update', data }));
