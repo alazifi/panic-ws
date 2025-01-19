@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 
 // Data default yang disimpan di memori
 let data = {
-  id: id,
-  name: "Defauklt name",
+  id: "id",
+  name: "Default name",
   addr: "Default Address",
   loc: "Default Address",
 };
