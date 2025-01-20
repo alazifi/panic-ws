@@ -20,12 +20,12 @@ let data = {
 };
 
 // GET Endpoint
-app.get('/api/data', (req, res) => {
+app.get('/panic', (req, res) => {
   res.json(data);
 });
 
 // POST Endpoint
-app.post('/api/data', (req, res) => {
+app.post('/panic', (req, res) => {
   const { id, name, addr, loc } = req.body;
 
   // Validasi input dan update data
